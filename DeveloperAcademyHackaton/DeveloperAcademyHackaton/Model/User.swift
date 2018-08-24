@@ -34,17 +34,4 @@ class User {
         doctorRatings = []
         officeRatings = []
     }
-
-    func defineUserAppointments(appointments: [Appointment]) {
-        self.appointments = appointments
-    }
-
-    func defineFavoritesDoctors(_ favorites: [Doctor]) {
-        self.saveDoctors = favorites
-    }
-
-    func defineRatings(forDoctors doctors: [DoctorRating], forOffice offices: [OfficeRating]) {
-        self.doctorRatings = doctors
-        self.officeRatings = offices
-    }
 }
