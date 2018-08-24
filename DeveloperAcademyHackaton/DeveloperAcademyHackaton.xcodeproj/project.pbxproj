@@ -14,6 +14,13 @@
 		AE641CEB21306DD700419E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE641CEA21306DD700419E55 /* Assets.xcassets */; };
 		AE641CEE21306DD700419E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE641CEC21306DD700419E55 /* LaunchScreen.storyboard */; };
 		AE641CF921306DD700419E55 /* DeveloperAcademyHackatonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641CF821306DD700419E55 /* DeveloperAcademyHackatonTests.swift */; };
+		AE641D052130B20800419E55 /* Office.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D042130B20800419E55 /* Office.swift */; };
+		AE641D092130B23A00419E55 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D082130B23A00419E55 /* Doctor.swift */; };
+		AE641D0B2130B25F00419E55 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D0A2130B25F00419E55 /* Appointment.swift */; };
+		AE641D0D2130B28A00419E55 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D0C2130B28A00419E55 /* Address.swift */; };
+		AE641D0F2130B2A600419E55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D0E2130B2A600419E55 /* User.swift */; };
+		AE641D112130B2B500419E55 /* DoctorRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D102130B2B500419E55 /* DoctorRating.swift */; };
+		AE641D132130B2E000419E55 /* OfficeRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D122130B2E000419E55 /* OfficeRating.swift */; };
 		BCBD6D02D70E7136A08A571F /* Pods_DeveloperAcademyHackatonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFEB134CADFF6A7F005A9FE /* Pods_DeveloperAcademyHackatonTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +47,13 @@
 		AE641CF421306DD700419E55 /* DeveloperAcademyHackatonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DeveloperAcademyHackatonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE641CF821306DD700419E55 /* DeveloperAcademyHackatonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperAcademyHackatonTests.swift; sourceTree = "<group>"; };
 		AE641CFA21306DD700419E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE641D042130B20800419E55 /* Office.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Office.swift; sourceTree = "<group>"; };
+		AE641D082130B23A00419E55 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		AE641D0A2130B25F00419E55 /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		AE641D0C2130B28A00419E55 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		AE641D0E2130B2A600419E55 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AE641D102130B2B500419E55 /* DoctorRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRating.swift; sourceTree = "<group>"; };
+		AE641D122130B2E000419E55 /* OfficeRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeRating.swift; sourceTree = "<group>"; };
 		BE3F2E94FBC556EF18D706AC /* Pods-DeveloperAcademyHackaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeveloperAcademyHackaton.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeveloperAcademyHackaton/Pods-DeveloperAcademyHackaton.release.xcconfig"; sourceTree = "<group>"; };
 		D3722F533F8F947747BD7D42 /* Pods-DeveloperAcademyHackatonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeveloperAcademyHackatonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeveloperAcademyHackatonTests/Pods-DeveloperAcademyHackatonTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5C1AABC09C30663E23E7E68 /* Pods-DeveloperAcademyHackaton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeveloperAcademyHackaton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeveloperAcademyHackaton/Pods-DeveloperAcademyHackaton.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +114,7 @@
 		AE641CE221306DD500419E55 /* DeveloperAcademyHackaton */ = {
 			isa = PBXGroup;
 			children = (
+				AE641D062130B21000419E55 /* Model */,
 				AE641CE321306DD500419E55 /* AppDelegate.swift */,
 				AE641CE521306DD500419E55 /* ViewController.swift */,
 				AE641CE721306DD500419E55 /* Main.storyboard */,
@@ -117,6 +132,20 @@
 				AE641CFA21306DD700419E55 /* Info.plist */,
 			);
 			path = DeveloperAcademyHackatonTests;
+			sourceTree = "<group>";
+		};
+		AE641D062130B21000419E55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE641D042130B20800419E55 /* Office.swift */,
+				AE641D082130B23A00419E55 /* Doctor.swift */,
+				AE641D0A2130B25F00419E55 /* Appointment.swift */,
+				AE641D0C2130B28A00419E55 /* Address.swift */,
+				AE641D0E2130B2A600419E55 /* User.swift */,
+				AE641D102130B2B500419E55 /* DoctorRating.swift */,
+				AE641D122130B2E000419E55 /* OfficeRating.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EC484866DD8B2C79E7156B92 /* Frameworks */ = {
@@ -284,8 +313,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE641D0D2130B28A00419E55 /* Address.swift in Sources */,
+				AE641D052130B20800419E55 /* Office.swift in Sources */,
 				AE641CE621306DD500419E55 /* ViewController.swift in Sources */,
+				AE641D092130B23A00419E55 /* Doctor.swift in Sources */,
 				AE641CE421306DD500419E55 /* AppDelegate.swift in Sources */,
+				AE641D112130B2B500419E55 /* DoctorRating.swift in Sources */,
+				AE641D0B2130B25F00419E55 /* Appointment.swift in Sources */,
+				AE641D0F2130B2A600419E55 /* User.swift in Sources */,
+				AE641D132130B2E000419E55 /* OfficeRating.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
