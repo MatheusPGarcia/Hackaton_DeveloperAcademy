@@ -18,6 +18,8 @@
 		AE35793F21316609004079FB /* DoctorOfficesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35793E21316609004079FB /* DoctorOfficesTableViewCell.swift */; };
 		AE35794221317541004079FB /* Scheduling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE35794121317541004079FB /* Scheduling.storyboard */; };
 		AE3579442131755A004079FB /* SchedulingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3579432131755A004079FB /* SchedulingViewController.swift */; };
+		AE3579462131B9DF004079FB /* DoctorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3579452131B9DF004079FB /* DoctorMock.swift */; };
+		AE3579482131BE2C004079FB /* OfficeMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3579472131BE2C004079FB /* OfficeMock.swift */; };
 		AE641CE421306DD500419E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641CE321306DD500419E55 /* AppDelegate.swift */; };
 		AE641CE921306DD500419E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE641CE721306DD500419E55 /* Main.storyboard */; };
 		AE641CEB21306DD700419E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE641CEA21306DD700419E55 /* Assets.xcassets */; };
@@ -58,6 +60,8 @@
 		AE35793E21316609004079FB /* DoctorOfficesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorOfficesTableViewCell.swift; sourceTree = "<group>"; };
 		AE35794121317541004079FB /* Scheduling.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scheduling.storyboard; sourceTree = "<group>"; };
 		AE3579432131755A004079FB /* SchedulingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulingViewController.swift; sourceTree = "<group>"; };
+		AE3579452131B9DF004079FB /* DoctorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorMock.swift; sourceTree = "<group>"; };
+		AE3579472131BE2C004079FB /* OfficeMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeMock.swift; sourceTree = "<group>"; };
 		AE641CE021306DD500419E55 /* DeveloperAcademyHackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeveloperAcademyHackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE641CE321306DD500419E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE641CE821306DD500419E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -123,6 +127,15 @@
 			path = DoctorCells;
 			sourceTree = "<group>";
 		};
+		AE3579492131BE36004079FB /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				AE3579452131B9DF004079FB /* DoctorMock.swift */,
+				AE3579472131BE2C004079FB /* OfficeMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		AE641CD721306DD400419E55 = {
 			isa = PBXGroup;
 			children = (
@@ -169,6 +182,7 @@
 		AE641D062130B21000419E55 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AE3579492131BE36004079FB /* Mock */,
 				AE641D042130B20800419E55 /* Office.swift */,
 				AE641D082130B23A00419E55 /* Doctor.swift */,
 				AE641D0A2130B25F00419E55 /* Appointment.swift */,
@@ -383,6 +397,7 @@
 			files = (
 				AE35793F21316609004079FB /* DoctorOfficesTableViewCell.swift in Sources */,
 				AE35793B2131659E004079FB /* DoctorTitleTableViewCell.swift in Sources */,
+				AE3579482131BE2C004079FB /* OfficeMock.swift in Sources */,
 				AE641D0D2130B28A00419E55 /* Address.swift in Sources */,
 				AE641D202130F5D200419E55 /* SearchScreenViewController.swift in Sources */,
 				AE35792921311D6F004079FB /* Utilities.swift in Sources */,
@@ -395,6 +410,7 @@
 				AE641D112130B2B500419E55 /* DoctorRating.swift in Sources */,
 				AE35793D213165E4004079FB /* DoctorSpecialistTableViewCell.swift in Sources */,
 				AE641D0B2130B25F00419E55 /* Appointment.swift in Sources */,
+				AE3579462131B9DF004079FB /* DoctorMock.swift in Sources */,
 				AE641D0F2130B2A600419E55 /* User.swift in Sources */,
 				AE641D132130B2E000419E55 /* OfficeRating.swift in Sources */,
 				AE3579442131755A004079FB /* SchedulingViewController.swift in Sources */,

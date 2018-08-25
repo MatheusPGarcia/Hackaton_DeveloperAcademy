@@ -15,8 +15,14 @@ class SearchScreenViewController: UIViewController {
     
     var segmentedIndex: Int = 0
 
+    var doctorMock = [DoctorMock]()
+    var officeMock = [OfficeMock]()
+    var favoriteMock = [DoctorMock]()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        instanciateMocks()
 
         guard let navController = self.navigationController else { return }
 
@@ -28,9 +34,23 @@ class SearchScreenViewController: UIViewController {
         self.navigationItem.title = "Médicos"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func instanciateMocks() {
+        let newDoc1 = DoctorMock("Giovana Lima", "Otorrinolaringologista", 4.5, UIImage(named: "m1")!)
+        let newDoc2 = DoctorMock("Pedro Henrique", "Psiquiatra", 2.1, UIImage(named: "h1")!)
+        let newDoc3 = DoctorMock("Julio Dalshtorm", "Pediatra", 4.6, UIImage(named: "h2")!)
+        let newDoc4 = DoctorMock("Larissa Bueno", "Oftalmologista", 4.5, UIImage(named: "m2")!)
+        let newDoc5 = DoctorMock("Bruna Lira", "Geriatria", 3.6, UIImage(named: "m3")!)
+
+        self.doctorMock = [newDoc1, newDoc2, newDoc3, newDoc4, newDoc5]
+        self.favoriteMock = [newDoc4]
+
+        let newOffice1 = OfficeMock("Clinica Paula Rangel", "Tel: (19) 3224-7865", 2.1, UIImage(named: "of1")!)
+        let newOffice2 = OfficeMock("Vitória Clinica Médica", "Tel: (19) 3345-7890", 3.5, UIImage(named: "of2")!)
+        let newOffice3 = OfficeMock("Benavitta Prevenção e Saúde", "Tel: (19) 3227-1246", 4.6, UIImage(named: "of3")!)
+        let newOffice4 = OfficeMock("Clinica Vila Itapura", "Tel: (19) 3239-2099", 5, UIImage(named: "of4")!)
+        let newOffice5 = OfficeMock("Climed Clinica Médica", "Tel: (19) 3897-5957", 4.2, UIImage(named: "of5")!)
+
+        self.officeMock = [newOffice1, newOffice2, newOffice3, newOffice4, newOffice5]
     }
 
     @IBAction func indexChanged(_ sender: UISegmentedControl) {
@@ -44,15 +64,12 @@ class SearchScreenViewController: UIViewController {
         switch segmentedIndex {
         case medicos:
             self.navigationItem.title = "Médicos"
-            print("Zero")
         case consultorios:
             self.navigationItem.title = "Consultório"
-            print("One")
         case favoritos:
             self.navigationItem.title = "Favoritos"
-            print("Two")
         default:
-            print("loco")
+            print("Unexpected value")
         }
 
         tableView.reloadData()
@@ -61,7 +78,15 @@ class SearchScreenViewController: UIViewController {
 
 extension SearchScreenViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        if segmentedIndex == 0 {
+            return doctorMock.count
+        } else if segmentedIndex == 1 {
+            return officeMock.count
+        } else if segmentedIndex == 2 {
+            return favoriteMock.count
+        }
+
+        return 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -70,18 +95,34 @@ extension SearchScreenViewController: UITableViewDelegate, UITableViewDataSource
 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? ModelTableViewCell else { return UITableViewCell() }
 
-        cell.topText = "Matheus Garcia"
-
         if segmentedIndex == 0 {
-            cell.middleText = "Medico gato bagarai"
-        } else if segmentedIndex == 1 {
-            cell.middleText = "Consultorio gato bagarai"
-        } else {
-            cell.middleText = "Favorito gato bagarai"
-        }
+            let doctor = doctorMock[indexPath.row]
 
-        let rating = Double(indexPath.row) + 0.2
-        cell.rating = rating
+            cell.topText = doctor.name
+            cell.middleText = doctor.specialist
+            cell.rating = doctor.rating
+            cell.picture = doctor.image
+
+            return cell
+        } else if segmentedIndex == 1 {
+            let office = officeMock[indexPath.row]
+
+            cell.topText = office.name
+            cell.middleText = office.tel
+            cell.rating = office.rating
+            cell.picture = office.image
+
+            return cell
+        } else if segmentedIndex == 2 {
+            let doctor = favoriteMock[indexPath.row]
+
+            cell.topText = doctor.name
+            cell.middleText = doctor.specialist
+            cell.rating = doctor.rating
+            cell.picture = doctor.image
+
+            return cell
+        }
 
         return cell
     }

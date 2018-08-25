@@ -20,7 +20,7 @@ class ModelTableViewCell: UITableViewCell {
     @IBOutlet weak var fourthStar: UIImageView!
     @IBOutlet weak var fifthStar: UIImageView!
 
-    var pictureUrl: String?
+    var picture: UIImage?
     var topText: String?
     var middleText: String?
     var rating: Double?
@@ -37,6 +37,10 @@ class ModelTableViewCell: UITableViewCell {
 
         if let middleText = middleText {
             middleLabel.text = middleText
+        }
+
+        if let picture = picture {
+            profilePicture.image = picture
         }
 
         if let rating = rating {
