@@ -51,7 +51,7 @@ extension Doctor {
         let age: Int = try container.decode(Int.self, forKey: .age)
         let crm: String = try container.decode(String.self, forKey: .crm)
         let offices: [Office] = try container.decode([Office].self, forKey: .offices)
-        let appointments: [Appointment] = try container.decode([Appointment], forKey: .appointments)
+        let appointments: [Appointment] = try container.decode([Appointment].self, forKey: .appointments)
         let doctorRatings: [DoctorRating] = try container.decode([DoctorRating], forKey: .doctorRatings)
 
         self.doctorId = doctorId
