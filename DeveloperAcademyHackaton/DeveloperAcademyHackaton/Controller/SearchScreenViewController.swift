@@ -135,12 +135,12 @@ extension SearchScreenViewController: UITableViewDelegate, UITableViewDataSource
 
         if segmentedIndex == 1 {
 
-            let reference = "OfficeViewController"
-            guard let destination = mainView.instantiateViewController(withIdentifier: reference) as? OfficeViewController else {
-                return
-            }
-
-            self.navigationController?.pushViewController(destination, animated: true)
+//            let reference = "OfficeViewController"
+//            guard let destination = mainView.instantiateViewController(withIdentifier: reference) as? OfficeViewController else {
+//                return
+//            }
+//
+//            self.navigationController?.pushViewController(destination, animated: true)
             return
         }
 
