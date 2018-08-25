@@ -158,7 +158,7 @@
                                             <outlet property="firstStar" destination="unL-z5-UdX" id="2jG-3z-RkS"/>
                                             <outlet property="fourthStar" destination="DJC-p9-MiA" id="PPR-nr-fS8"/>
                                             <outlet property="middleLabel" destination="jo1-Cq-wao" id="qAx-XN-PiW"/>
-                                            <outlet property="perfilPhoto" destination="SGi-d4-PKp" id="JR6-f4-pql"/>
+                                            <outlet property="profilePicture" destination="SGi-d4-PKp" id="JR6-f4-pql"/>
                                             <outlet property="secondStar" destination="OMz-7s-cxN" id="lf7-yw-ril"/>
                                             <outlet property="thirdStar" destination="Af9-J8-qb1" id="8p6-jr-Fsf"/>
                                             <outlet property="topLabel" destination="ebU-EC-6Ui" id="Sqw-p6-TU1"/>

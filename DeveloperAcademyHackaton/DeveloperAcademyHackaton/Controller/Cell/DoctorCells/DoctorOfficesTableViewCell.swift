@@ -1,5 +1,5 @@
 //
-//  DoctorTableViewCell.swift
+//  DoctorOfficesTableViewCell.swift
 //  DeveloperAcademyHackaton
 //
 //  Created by Matheus Garcia on 25/08/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ModelTableViewCell: UITableViewCell {
+class DoctorOfficesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var profilePicture: UIImageView!
     @IBOutlet weak var topLabel: UILabel!
@@ -60,11 +60,5 @@ class ModelTableViewCell: UITableViewCell {
             }
             fifthStar.image = UIImage(named: "full")
         }
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 }

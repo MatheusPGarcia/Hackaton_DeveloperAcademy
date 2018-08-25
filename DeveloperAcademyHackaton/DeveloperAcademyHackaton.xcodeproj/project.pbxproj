@@ -13,6 +13,9 @@
 		AE35793321314B79004079FB /* OfficeProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE35793221314B79004079FB /* OfficeProfile.storyboard */; };
 		AE35793521314B97004079FB /* OfficeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35793421314B97004079FB /* OfficeViewController.swift */; };
 		AE35793921314BC9004079FB /* DoctorProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35793821314BC9004079FB /* DoctorProfileViewController.swift */; };
+		AE35793B2131659E004079FB /* DoctorTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35793A2131659E004079FB /* DoctorTitleTableViewCell.swift */; };
+		AE35793D213165E4004079FB /* DoctorSpecialistTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35793C213165E4004079FB /* DoctorSpecialistTableViewCell.swift */; };
+		AE35793F21316609004079FB /* DoctorOfficesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35793E21316609004079FB /* DoctorOfficesTableViewCell.swift */; };
 		AE641CE421306DD500419E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641CE321306DD500419E55 /* AppDelegate.swift */; };
 		AE641CE921306DD500419E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE641CE721306DD500419E55 /* Main.storyboard */; };
 		AE641CEB21306DD700419E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE641CEA21306DD700419E55 /* Assets.xcassets */; };
@@ -48,6 +51,9 @@
 		AE35793221314B79004079FB /* OfficeProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfficeProfile.storyboard; sourceTree = "<group>"; };
 		AE35793421314B97004079FB /* OfficeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeViewController.swift; sourceTree = "<group>"; };
 		AE35793821314BC9004079FB /* DoctorProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorProfileViewController.swift; sourceTree = "<group>"; };
+		AE35793A2131659E004079FB /* DoctorTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorTitleTableViewCell.swift; sourceTree = "<group>"; };
+		AE35793C213165E4004079FB /* DoctorSpecialistTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorSpecialistTableViewCell.swift; sourceTree = "<group>"; };
+		AE35793E21316609004079FB /* DoctorOfficesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorOfficesTableViewCell.swift; sourceTree = "<group>"; };
 		AE641CE021306DD500419E55 /* DeveloperAcademyHackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeveloperAcademyHackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE641CE321306DD500419E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE641CE821306DD500419E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -101,6 +107,16 @@
 				D3722F533F8F947747BD7D42 /* Pods-DeveloperAcademyHackatonTests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		AE35794021316612004079FB /* DoctorCells */ = {
+			isa = PBXGroup;
+			children = (
+				AE35793A2131659E004079FB /* DoctorTitleTableViewCell.swift */,
+				AE35793C213165E4004079FB /* DoctorSpecialistTableViewCell.swift */,
+				AE35793E21316609004079FB /* DoctorOfficesTableViewCell.swift */,
+			);
+			path = DoctorCells;
 			sourceTree = "<group>";
 		};
 		AE641CD721306DD400419E55 = {
@@ -186,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				AE641D222131012C00419E55 /* ModelTableViewCell.swift */,
+				AE35794021316612004079FB /* DoctorCells */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -357,6 +374,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE35793F21316609004079FB /* DoctorOfficesTableViewCell.swift in Sources */,
+				AE35793B2131659E004079FB /* DoctorTitleTableViewCell.swift in Sources */,
 				AE641D0D2130B28A00419E55 /* Address.swift in Sources */,
 				AE641D202130F5D200419E55 /* SearchScreenViewController.swift in Sources */,
 				AE35792921311D6F004079FB /* Utilities.swift in Sources */,
@@ -367,6 +386,7 @@
 				AE641D232131012C00419E55 /* ModelTableViewCell.swift in Sources */,
 				AE641CE421306DD500419E55 /* AppDelegate.swift in Sources */,
 				AE641D112130B2B500419E55 /* DoctorRating.swift in Sources */,
+				AE35793D213165E4004079FB /* DoctorSpecialistTableViewCell.swift in Sources */,
 				AE641D0B2130B25F00419E55 /* Appointment.swift in Sources */,
 				AE641D0F2130B2A600419E55 /* User.swift in Sources */,
 				AE641D132130B2E000419E55 /* OfficeRating.swift in Sources */,
