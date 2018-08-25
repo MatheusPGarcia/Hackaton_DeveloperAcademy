@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0CBB80228D500FC5D2A5BAD2 /* Pods_DeveloperAcademyHackaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FC01CBA69C3F19BB26877CF /* Pods_DeveloperAcademyHackaton.framework */; };
 		AE35792921311D6F004079FB /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE35792821311D6F004079FB /* Utilities.swift */; };
+		AE35792D21312CE8004079FB /* DoctorProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE35792C21312CE8004079FB /* DoctorProfile.storyboard */; };
 		AE641CE421306DD500419E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641CE321306DD500419E55 /* AppDelegate.swift */; };
 		AE641CE921306DD500419E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE641CE721306DD500419E55 /* Main.storyboard */; };
 		AE641CEB21306DD700419E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE641CEA21306DD700419E55 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		4109E9416F6E930C44C54FC6 /* Pods-DeveloperAcademyHackatonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeveloperAcademyHackatonTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeveloperAcademyHackatonTests/Pods-DeveloperAcademyHackatonTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9FC01CBA69C3F19BB26877CF /* Pods_DeveloperAcademyHackaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DeveloperAcademyHackaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE35792821311D6F004079FB /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		AE35792C21312CE8004079FB /* DoctorProfile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DoctorProfile.storyboard; sourceTree = "<group>"; };
 		AE641CE021306DD500419E55 /* DeveloperAcademyHackaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeveloperAcademyHackaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE641CE321306DD500419E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AE641CE821306DD500419E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			children = (
 				AE641CE721306DD500419E55 /* Main.storyboard */,
 				AE641CEC21306DD700419E55 /* LaunchScreen.storyboard */,
+				AE35792C21312CE8004079FB /* DoctorProfile.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 				AE641CEE21306DD700419E55 /* LaunchScreen.storyboard in Resources */,
 				AE641CEB21306DD700419E55 /* Assets.xcassets in Resources */,
 				AE641CE921306DD500419E55 /* Main.storyboard in Resources */,
+				AE35792D21312CE8004079FB /* DoctorProfile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
