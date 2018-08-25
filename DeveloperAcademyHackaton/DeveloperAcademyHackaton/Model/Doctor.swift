@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Doctor {
+struct Doctor: Codable {
 
     let doctorId: String
     let name: String
@@ -29,5 +29,37 @@ class Doctor {
         offices = []
         appointments = []
         doctorRatings = []
+    }
+}
+
+extension Doctor {
+    enum StructKeys: String, CodingKey {
+        case doctorId
+        case name
+        case age
+        case crm
+        case offices
+        case appointments
+        case doctorRatings
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: StructKeys.self)
+
+        let doctorId: String = try container.decode(String.self, forKey: .doctorId)
+        let name: String = try container.decode(String.self, forKey: .name)
+        let age: Int = try container.decode(Int.self, forKey: .age)
+        let crm: String = try container.decode(String.self, forKey: .crm)
+        let offices: [Office] = try container.decode([Office].self, forKey: .offices)
+        let appointments: [Appointment] = try container.decode([Appointment], forKey: .appointments)
+        let doctorRatings: [DoctorRating] = try container.decode([DoctorRating], forKey: .doctorRatings)
+
+        self.doctorId = doctorId
+        self.name = name
+        self.age = age
+        self.crm = crm
+        self.offices = offices
+        self.appointments = appointments
+        self.doctorRatings = doctorRatings
     }
 }
