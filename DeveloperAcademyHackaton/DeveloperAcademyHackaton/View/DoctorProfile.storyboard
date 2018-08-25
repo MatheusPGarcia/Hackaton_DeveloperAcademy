@@ -325,6 +325,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Agendar" id="3Cy-m5-WSN">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <segue destination="GPJ-mN-Er2" kind="show" id="Hhl-xj-sAT"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -343,6 +346,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="53a-Lc-s8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="607.20000000000005" y="-565.36731634182911"/>
+        </scene>
+        <!--SchedulingViewController-->
+        <scene sceneID="FlT-Ew-MRf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SchedulingViewController" storyboardName="Scheduling" referencedIdentifier="SchedulingViewController" id="GPJ-mN-Er2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4nG-TA-cgV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="-566"/>
         </scene>
     </scenes>
     <resources>
