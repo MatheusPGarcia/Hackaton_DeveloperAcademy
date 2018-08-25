@@ -18,10 +18,23 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
+                    <connections>
+                        <segue destination="ohv-Mh-FQe" kind="relationship" relationship="viewControllers" id="W8l-qx-Q0N"/>
+                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GmI-lC-wYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--SearchScreen-->
+        <scene sceneID="cHb-aD-sVu">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="SearchScreen" storyboardName="SearchScreen" referencedIdentifier="SearchScreen" id="ohv-Mh-FQe" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="3qS-vo-6Dt"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ov-Iw-qaH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="117"/>
         </scene>
     </scenes>
 </document>
