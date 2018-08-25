@@ -143,10 +143,26 @@ extension SearchScreenViewController: UITableViewDelegate, UITableViewDataSource
             self.navigationController?.pushViewController(destination, animated: true)
             return
         }
+
+        var doctor: DoctorMock
+
+        if segmentedIndex == 0 {
+            doctor = doctorMock[index]
+        } else {
+            doctor = favoriteMock[index]
+        }
+
         let reference = "DoctorProfileViewController"
         guard let destination = mainView.instantiateViewController(withIdentifier: reference) as? DoctorProfileViewController else {
             return
         }
+
+        var offices = [OfficeMock]()
+        offices.append(officeMock[1])
+        offices.append(officeMock[2])
+
+        destination.doctor = doctor
+        destination.offices = offices
 
         self.navigationController?.pushViewController(destination, animated: true)
     }

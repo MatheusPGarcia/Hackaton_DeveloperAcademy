@@ -11,16 +11,12 @@ import UIKit
 class DoctorTitleTableViewCell: UITableViewCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+
+    var title: String?
+
+    override func layoutSubviews() {
+        if let title = title {
+            titleLabel.text = title
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

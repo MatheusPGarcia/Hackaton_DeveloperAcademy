@@ -190,7 +190,7 @@
                         <viewLayoutGuide key="safeArea" id="vOR-am-EN8"/>
                     </view>
                     <navigationItem key="navigationItem" title="teste" largeTitleDisplayMode="always" id="2nd-nB-h9w">
-                        <barButtonItem key="rightBarButtonItem" title="Filter" id="ZrI-eJ-yOz">
+                        <barButtonItem key="rightBarButtonItem" image="FilterIcon" id="ZrI-eJ-yOz">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </barButtonItem>
                     </navigationItem>
@@ -279,6 +279,7 @@
     <resources>
         <image name="17904468_1306313896121198_985936937788525920_n" width="956" height="959"/>
         <image name="CustomSearch" width="29" height="28"/>
+        <image name="FilterIcon" width="24" height="20"/>
         <image name="User" width="31" height="29"/>
         <image name="empty" width="23" height="22"/>
     </resources>

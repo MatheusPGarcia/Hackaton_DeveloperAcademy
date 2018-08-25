@@ -12,15 +12,11 @@ class DoctorSpecialistTableViewCell: UITableViewCell {
 
     @IBOutlet weak var specialistLabel: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    var specialist: String?
+
+    override func layoutSubviews() {
+        if let specialist = specialist {
+            specialistLabel.text = specialist
+        }
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }

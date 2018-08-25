@@ -20,7 +20,7 @@ class DoctorOfficesTableViewCell: UITableViewCell {
     @IBOutlet weak var fourthStar: UIImageView!
     @IBOutlet weak var fifthStar: UIImageView!
 
-    var pictureUrl: String?
+    var picture: UIImage?
     var topText: String?
     var middleText: String?
     var rating: Double?
@@ -30,6 +30,10 @@ class DoctorOfficesTableViewCell: UITableViewCell {
 
         profilePicture.layer.cornerRadius = profilePicture.frame.width / 2
         profilePicture.layer.masksToBounds = true
+
+        if let picture = picture {
+            profilePicture.image = picture
+        }
 
         if let topText = topText {
             topLabel.text = topText
