@@ -17,6 +17,15 @@ class SearchScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        guard let navController = self.navigationController else { return }
+
+        let navBar = navController.navigationBar
+        navBar.barTintColor = UIColor.customBlue
+        navBar.largeTitleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white]
+        navBar.isTranslucent = false
+
+        self.navigationItem.title = "Médicos"
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,10 +43,13 @@ class SearchScreenViewController: UIViewController {
 
         switch segmentedIndex {
         case medicos:
+            self.navigationItem.title = "Médicos"
             print("Zero")
         case consultorios:
+            self.navigationItem.title = "Consultório"
             print("One")
         case favoritos:
+            self.navigationItem.title = "Favoritos"
             print("Two")
         default:
             print("loco")
