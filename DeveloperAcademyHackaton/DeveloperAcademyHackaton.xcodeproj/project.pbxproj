@@ -20,8 +20,8 @@
 		AE641D0F2130B2A600419E55 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D0E2130B2A600419E55 /* User.swift */; };
 		AE641D112130B2B500419E55 /* DoctorRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D102130B2B500419E55 /* DoctorRating.swift */; };
 		AE641D132130B2E000419E55 /* OfficeRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D122130B2E000419E55 /* OfficeRating.swift */; };
-		AE641D1E2130F53800419E55 /* SearchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE641D1D2130F53800419E55 /* SearchScreen.storyboard */; };
 		AE641D202130F5D200419E55 /* SearchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D1F2130F5D200419E55 /* SearchScreenViewController.swift */; };
+		AE641D232131012C00419E55 /* ModelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE641D222131012C00419E55 /* ModelTableViewCell.swift */; };
 		BCBD6D02D70E7136A08A571F /* Pods_DeveloperAcademyHackatonTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EEFEB134CADFF6A7F005A9FE /* Pods_DeveloperAcademyHackatonTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,8 +54,8 @@
 		AE641D0E2130B2A600419E55 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		AE641D102130B2B500419E55 /* DoctorRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorRating.swift; sourceTree = "<group>"; };
 		AE641D122130B2E000419E55 /* OfficeRating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfficeRating.swift; sourceTree = "<group>"; };
-		AE641D1D2130F53800419E55 /* SearchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchScreen.storyboard; sourceTree = "<group>"; };
 		AE641D1F2130F5D200419E55 /* SearchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScreenViewController.swift; sourceTree = "<group>"; };
+		AE641D222131012C00419E55 /* ModelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelTableViewCell.swift; sourceTree = "<group>"; };
 		BE3F2E94FBC556EF18D706AC /* Pods-DeveloperAcademyHackaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeveloperAcademyHackaton.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeveloperAcademyHackaton/Pods-DeveloperAcademyHackaton.release.xcconfig"; sourceTree = "<group>"; };
 		D3722F533F8F947747BD7D42 /* Pods-DeveloperAcademyHackatonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeveloperAcademyHackatonTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DeveloperAcademyHackatonTests/Pods-DeveloperAcademyHackatonTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5C1AABC09C30663E23E7E68 /* Pods-DeveloperAcademyHackaton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DeveloperAcademyHackaton.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DeveloperAcademyHackaton/Pods-DeveloperAcademyHackaton.debug.xcconfig"; sourceTree = "<group>"; };
@@ -117,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				AE641CE321306DD500419E55 /* AppDelegate.swift */,
-				AE641D212130F5DB00419E55 /* Controller */,
 				AE641D062130B21000419E55 /* Model */,
+				AE641D212130F5DB00419E55 /* Controller */,
 				AE641D1A2130F2BF00419E55 /* View */,
 				AE641CEA21306DD700419E55 /* Assets.xcassets */,
 				AE641CEF21306DD700419E55 /* Info.plist */,
@@ -153,7 +153,6 @@
 			isa = PBXGroup;
 			children = (
 				AE641CE721306DD500419E55 /* Main.storyboard */,
-				AE641D1D2130F53800419E55 /* SearchScreen.storyboard */,
 				AE641CEC21306DD700419E55 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -162,9 +161,18 @@
 		AE641D212130F5DB00419E55 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AE641D242131013500419E55 /* Cell */,
 				AE641D1F2130F5D200419E55 /* SearchScreenViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		AE641D242131013500419E55 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				AE641D222131012C00419E55 /* ModelTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		EC484866DD8B2C79E7156B92 /* Frameworks */ = {
@@ -260,7 +268,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE641D1E2130F53800419E55 /* SearchScreen.storyboard in Resources */,
 				AE641CEE21306DD700419E55 /* LaunchScreen.storyboard in Resources */,
 				AE641CEB21306DD700419E55 /* Assets.xcassets in Resources */,
 				AE641CE921306DD500419E55 /* Main.storyboard in Resources */,
@@ -337,6 +344,7 @@
 				AE641D202130F5D200419E55 /* SearchScreenViewController.swift in Sources */,
 				AE641D052130B20800419E55 /* Office.swift in Sources */,
 				AE641D092130B23A00419E55 /* Doctor.swift in Sources */,
+				AE641D232131012C00419E55 /* ModelTableViewCell.swift in Sources */,
 				AE641CE421306DD500419E55 /* AppDelegate.swift in Sources */,
 				AE641D112130B2B500419E55 /* DoctorRating.swift in Sources */,
 				AE641D0B2130B25F00419E55 /* Appointment.swift in Sources */,
