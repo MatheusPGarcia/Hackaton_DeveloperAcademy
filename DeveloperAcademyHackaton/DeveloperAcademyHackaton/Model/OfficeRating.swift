@@ -50,5 +50,4 @@ extension OfficeRating {
         self.cleaning = cleaning
         self.comments = comments
     }
-
 }
