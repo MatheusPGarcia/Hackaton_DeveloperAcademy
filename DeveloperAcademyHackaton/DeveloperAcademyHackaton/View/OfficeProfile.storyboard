@@ -10,20 +10,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Doctor Profile View Controller-->
-        <scene sceneID="sYp-jC-wh2">
+        <!--Office View Controller-->
+        <scene sceneID="zzM-xx-4ey">
             <objects>
-                <viewController storyboardIdentifier="DoctorProfileViewController" id="Vag-IU-8Jn" customClass="DoctorProfileViewController" customModule="DeveloperAcademyHackaton" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="rLr-Xv-xgh">
+                <viewController storyboardIdentifier="OfficeViewController" id="1f9-2q-jdz" customClass="OfficeViewController" customModule="DeveloperAcademyHackaton" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTz-9l-d5X">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="g1h-z3-ADK"/>
+                        <viewLayoutGuide key="safeArea" id="JYf-24-Qq4"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="53a-Lc-s8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDN-yb-dc4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="608" y="-565"/>
+            <point key="canvasLocation" x="438" y="-157"/>
         </scene>
     </scenes>
 </document>

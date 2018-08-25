@@ -85,4 +85,28 @@ extension SearchScreenViewController: UITableViewDelegate, UITableViewDataSource
 
         return cell
     }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        let index = indexPath.row
+
+        let mainView = UIStoryboard(name: "Main", bundle: nil)
+
+        if segmentedIndex == 1 {
+
+            let reference = "OfficeViewController"
+            guard let destination = mainView.instantiateViewController(withIdentifier: reference) as? OfficeViewController else {
+                return
+            }
+
+            self.navigationController?.pushViewController(destination, animated: true)
+            return
+        }
+        let reference = "DoctorProfileViewController"
+        guard let destination = mainView.instantiateViewController(withIdentifier: reference) as? DoctorProfileViewController else {
+            return
+        }
+
+        self.navigationController?.pushViewController(destination, animated: true)
+    }
 }

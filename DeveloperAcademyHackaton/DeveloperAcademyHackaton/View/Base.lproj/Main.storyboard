@@ -34,7 +34,7 @@
         <!--teste-->
         <scene sceneID="9sN-6T-q9l">
             <objects>
-                <viewController id="qbP-oz-D9w" customClass="SearchScreenViewController" customModule="DeveloperAcademyHackaton" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchScreenViewController" id="qbP-oz-D9w" customClass="SearchScreenViewController" customModule="DeveloperAcademyHackaton" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eGb-ek-7z4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -192,11 +192,29 @@
                     <connections>
                         <outlet property="segmentedControll" destination="ffp-CY-W7x" id="L4M-Od-94R"/>
                         <outlet property="tableView" destination="1Ds-So-0jt" id="J13-XO-MKi"/>
+                        <segue destination="JuT-q2-OKA" kind="show" identifier="goToDoctor" id="uVJ-yg-c9q"/>
+                        <segue destination="45m-BS-RKJ" kind="show" identifier="goToOffice" id="FSY-2T-UJa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abX-q8-tM5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2024.5" y="-378.5"/>
+        </scene>
+        <!--DoctorProfileViewController-->
+        <scene sceneID="8S8-N5-9sf">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="DoctorProfileViewController" storyboardName="DoctorProfile" referencedIdentifier="DoctorProfileViewController" id="JuT-q2-OKA" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGd-Db-NmU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2738" y="-422"/>
+        </scene>
+        <!--OfficeViewController-->
+        <scene sceneID="pjn-MN-o2Z">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="OfficeViewController" storyboardName="OfficeProfile" referencedIdentifier="OfficeViewController" id="45m-BS-RKJ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J5K-w6-2tM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2702" y="-330"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="SUf-Mq-uN9">
@@ -255,6 +273,6 @@
     </scenes>
     <resources>
         <image name="17904468_1306313896121198_985936937788525920_n" width="956" height="959"/>
-        <image name="empty" width="2000" height="1882"/>
+        <image name="empty" width="23" height="22"/>
     </resources>
 </document>
